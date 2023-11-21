@@ -8,6 +8,7 @@ function AssignmentItem({ gradeInfo }) {
       <span>{gradeInfo.grade}</span>
       <span>
       {
+        gradeInfo.grade > 100 ? "A+" :
         gradeInfo.grade >= 90 ? "A" :
         gradeInfo.grade >= 80 ? "B" :
         gradeInfo.grade >= 70 ? "C" :

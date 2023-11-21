@@ -3,7 +3,6 @@ import GradesList from "./components/GradesList";
 import GradeInput from "./components/GradeInput";
 import GradeButtons from "./components/GradeButtons";
 import grades from "./models/grades";
-import {act} from "react-dom/test-utils";
 import Credits from "./components/Credits";
 
 const GRADE_ACTIONS = {
@@ -36,7 +35,10 @@ function gradeListReducer(state, action)
       return index > -1 ? [...(state.splice(index, 1))] : [...state];
     
     case GRADE_ACTIONS.SET_GRADE:
-      return index > -1 ? [...(state.splice(index, 1)), action.payload.value] : [...state];
+      if(index > -1) { state.splice(index, 1, action.payload.value); return [...state]; }
+      else { return [...state]; }
+      // Don't know why this doesn't work but top does...
+      // return index > -1 ? [...(state.splice(index, 1, action.payload.value))] : [...state];
   }
 }
 
@@ -47,7 +49,7 @@ function App() {
   
   const [gradeList, gradeListDispatch] = useReducer(gradeListReducer, grades);
   
-  const [currentGradeInput, setCurrentGradeInput] = useState(makeGradeItem());
+  // const [currentGradeInput, setCurrentGradeInput] = useState(makeGradeItem());
     
   function makeGradeItem()
   {    
@@ -57,6 +59,10 @@ function App() {
       assignment: assignmentNameRef.current.value,
       grade: assignmentGradeRef.current.value
     };
+    
+    // studentNameRef.current.value = "";
+    // assignmentNameRef.current.value = "";
+    // assignmentGradeRef.current.value = "";
     
     console.log(obj)
     return obj;
