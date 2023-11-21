@@ -4,6 +4,7 @@ import GradeInput from "./components/GradeInput";
 import GradeButtons from "./components/GradeButtons";
 import grades from "./models/grades";
 import {act} from "react-dom/test-utils";
+import Credits from "./components/Credits";
 
 const GRADE_ACTIONS = {
   ADD_GRADE: 0,
@@ -74,6 +75,8 @@ function App() {
         actions={GRADE_ACTIONS}
         dispatchEvent={gradeListDispatch}
       />
+      
+      <Credits />
     </div>
   );
 }

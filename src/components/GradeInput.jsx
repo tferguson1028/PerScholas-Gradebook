@@ -3,17 +3,19 @@ import React, {useEffect} from 'react'
 function GradeInput( { studentNameRef, assignmentNameRef, assignmentGradeRef } ) 
 {
   return (
-    <div id='GradeInput'> 
-      <input 
-        type="text" 
-        name="studentInput"
-        id="studentInput" 
-        ref={studentNameRef} 
-        placeholder="Student Name" 
-        defaultValue={""}
-      />
-      <input type="text" name="assignmentName" id="assignmentName" ref={assignmentNameRef} placeholder="Assignment Name" defaultValue={""}/>
-      <input type="number" name="gradeValue" id="gradeValue" ref={assignmentGradeRef} placeholder="Grade" defaultValue={""}/>
+    <div id='GradeInput'>
+      <div className='input'>
+        <label htmlFor="studentInput">Student</label>
+        <input id="studentInput" name="studentInput" type="text" ref={studentNameRef} placeholder="Student Name" defaultValue={""} />
+      </div>
+      <div className='input'>
+        <label htmlFor="studentInput">Assignment</label>
+        <input id="assignmentName" name="assignmentName" type="text" ref={assignmentNameRef} placeholder="Assignment Name" defaultValue={""} />
+      </div>
+      <div className='input'>
+        <label htmlFor="gradeValue">Grade Percentage</label>
+        <input id="gradeValue" name="gradeValue" type="number" ref={assignmentGradeRef} placeholder="Grade" defaultValue={""} />
+      </div>
     </div>
   )
 }
