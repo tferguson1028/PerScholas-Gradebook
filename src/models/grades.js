@@ -29,7 +29,7 @@ function createRandomGrade()
     randNum = "0"+randNum;
   return {
     name: randName,
-    assignment: `Homework${randNum}`,
+    assignment: `Homework ${randNum}`,
     grade: (Math.random()*(100-39)+39).toFixed(0)
   };
 }

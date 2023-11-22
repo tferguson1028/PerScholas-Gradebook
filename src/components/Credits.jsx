@@ -2,7 +2,7 @@ import React from 'react'
 
 function Credits() {
   return (
-    <div>
+    <div className='Credits'>
       <span>Icons by <a href="https://icons8.com">Icons8</a></span>
       <span><a href="https://icons8.com/icon/IA4hgI5aWiHD/add">Add</a></span>
       <span><a href="https://icons8.com/icon/xNgsHu6eqArG/do-not-disturb">Do Not Disturb</a></span>

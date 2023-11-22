@@ -1,0 +1,28 @@
+.GradeButtons
+{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 8px 24px;
+}
+
+.GradeButtons > *
+{
+  flex: 1;
+}
+
+.GradeButtons button
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  height: 64px;
+  padding: 8px;
+}
+
+.GradeButtons button > img
+{
+  height: 100%;
+}

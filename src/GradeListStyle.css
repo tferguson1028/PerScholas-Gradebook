@@ -1,10 +1,14 @@
 .GradeList
 {
+  flex-basis: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
   display: flex;
   flex-direction: column;
   
-  background-color: black;
-  border: 2px solid blue;
+  background-color: white;
+  border-bottom: 2px solid #304FFE;
 }
 
 .GradeList > *
@@ -14,21 +18,47 @@
   flex-direction: row;
 }
 
+.GradeList > header
+{
+  flex: 2;
+  min-height: 32pt;
+  max-height: 48pt;
+  
+  border-bottom: 2px solid #304FFE;
+  
+  font-weight: bold;
+}
+
+.GradeList > header > *
+{
+  background-color: #8C9EFF;
+}
+
 .GradeList > * > * 
 { 
   flex: 4; 
-  border: 1px solid black;
-  border-width: 0 1px;
+  /* border: 1px solid black; */
+  /* border-width: 0 1px; */
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
 }
+
+.GradeList > header > span:nth-child(even), 
+.AssignmentItem > *:nth-child(even)
+{
+  /* Got this after messing with it a bit */
+  filter: brightness(0.90) contrast(1.2);
+}
+
 .GradeList > * > *:nth-child(3) { flex: 2; }
 .GradeList > * > *:nth-child(4) { flex: 1; }
-.AssignmentItem > *:nth-child(3) { text-align: right; }
-.AssignmentItem > *:nth-child(4) { text-align: right; }
 
-.AssignmentItem:nth-of-type(even) > * { background-color: aliceblue; }
+.AssignmentItem:nth-of-type(even) > * { background-color: #E8EAF6; }
 .AssignmentItem:nth-of-type(odd) > * { background-color: white; }
 
-header > *
-{
-  background-color: aliceblue;
+.AssignmentItem 
+{ 
+  min-height: 16pt; 
+  max-height: 24pt;
 }
