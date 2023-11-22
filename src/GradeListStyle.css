@@ -1,6 +1,5 @@
 .GradeList
-{
-  flex-basis: 70%;
+{  
   overflow-y: auto;
   overflow-x: hidden;
   
@@ -58,7 +57,7 @@
 .AssignmentItem:nth-of-type(odd) > * { background-color: white; }
 
 .AssignmentItem 
-{ 
+{
   min-height: 16pt; 
   max-height: 24pt;
 }
