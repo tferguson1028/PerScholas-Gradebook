@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.App > .GradeList { flex-basis: 75%; }
-.App > .GradeInput { flex-basis: 10%; }
+.App > .GradeList { flex-basis: 70%; }
+.App > .GradeInput { flex-basis: 15%; }
 .App > .GradeButtons { flex-basis: 10%; }
 .App > .Credits { flex-basis: 5%; }

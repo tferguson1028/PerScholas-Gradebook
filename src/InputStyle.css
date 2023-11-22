@@ -6,9 +6,29 @@
   padding: 8px 16px;
 }
 
-.GradeInput > *
+.GradeInput > .input
 {
   flex: 1;
   display: flex;
   flex-direction: column;
+  
+  min-height: fit-content;
+}
+
+.GradeInput > .input > label
+{
+  /* flex: 2; */
+  
+  font-weight: bold;
+  display: flex;
+  align-items: end;
+  min-height: 16pt;
+}
+
+.GradeInput > .input > input
+{
+  flex: 1;
+  padding: 4px 8px;
+  font-size: 11pt;
+  min-height: 16pt;
 }
