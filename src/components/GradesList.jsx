@@ -1,5 +1,6 @@
 import React from 'react'
 import AssignmentItem from './AssignmentItem'
+import "../GradeListStyle.css"
 
 function GradesList({ grades }) {
   return (

@@ -5,28 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #AAAABB;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.GradeList
-{
-  display: flex;
-  flex-direction: column;
-}
-
-.GradeList > *
-{
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-.GradeList > * > * { flex: 3; }
-.GradeList > * > *:nth-child(3) { flex: 2; }
-.GradeList > * > *:nth-child(4) { flex: 1; }
-.AssignmentItem > *:nth-child(3) { text-align: right; }
-.AssignmentItem > *:nth-child(4) { text-align: right; }

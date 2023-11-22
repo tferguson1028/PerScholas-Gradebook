@@ -1,9 +1,10 @@
-import React, {useEffect, useReducer, useRef, useState} from "react";
+import React, { useReducer, useRef } from "react";
 import GradesList from "./components/GradesList";
 import GradeInput from "./components/GradeInput";
 import GradeButtons from "./components/GradeButtons";
 import grades from "./models/grades";
 import Credits from "./components/Credits";
+import "./App.css";
 
 const GRADE_ACTIONS = {
   ADD_GRADE: 0,
