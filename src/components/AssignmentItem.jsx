@@ -5,7 +5,7 @@ function AssignmentItem({ gradeInfo }) {
     <div className='AssignmentItem'>
       <span>{gradeInfo.name}</span>
       <span>{gradeInfo.assignment}</span>
-      <span>{gradeInfo.grade}</span>
+      <span>{gradeInfo.grade}%</span>
       <span>
       {
         gradeInfo.grade > 100 ? "A+" :

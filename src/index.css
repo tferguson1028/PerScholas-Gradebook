@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.GradeList
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.GradeList > *
+{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.GradeList > * > *
+{
+  flex: 1;
+}

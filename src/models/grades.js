@@ -23,10 +23,14 @@ const names = [
 
 function createRandomGrade()
 {
+  let randName = names[Math.floor(Math.random()*names.length)];
+  let randNum = Math.floor(Math.random()*5898+101);
+  while(String(randNum).length < 4)
+    randNum = "0"+randNum;
   return {
-    name: names[Math.floor(Math.random()*names.length)],
-    assignment: `Homework${Math.floor(Math.random()*5998+1)}`,
-    grade: 100
+    name: randName,
+    assignment: `Homework${randNum}`,
+    grade: (Math.random()*(100-39)+39).toFixed(0)
   };
 }
 
