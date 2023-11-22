@@ -35,3 +35,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Credits
+{
+  padding: 2px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 10pt;
+  
+  /* justify-content: center; */
+  align-items: center;
+  
+}
