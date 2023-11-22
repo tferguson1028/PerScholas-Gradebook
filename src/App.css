@@ -7,9 +7,15 @@
   
   display: flex;
   flex-direction: column;
+  
+  border: 0px solid #FFF9C4;
+  border-width: 0 0 8px 0;
+  
+  box-shadow: 0 1px 8px #A1887F;
+  /* border-bottom wasn't working for some reason */
 }
 
 .App > .GradeList { flex-basis: 70%; }
-.App > .GradeInput { flex-basis: 15%; }
+.App > .GradeInput { margin-top: 4px; flex-basis: 15%; }
 .App > .GradeButtons { flex-basis: 10%; }
 .App > .Credits { flex-basis: 5%; }
