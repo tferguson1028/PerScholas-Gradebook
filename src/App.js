@@ -61,12 +61,16 @@ function App() {
       grade: assignmentGradeRef.current.value
     };
     
-    // studentNameRef.current.value = "";
-    // assignmentNameRef.current.value = "";
-    // assignmentGradeRef.current.value = "";
-    
+    clearInput();
     console.log(obj)
     return obj;
+  }
+  
+  function clearInput()
+  {
+    studentNameRef.current.value = "";
+    assignmentNameRef.current.value = "";
+    assignmentGradeRef.current.value = "";
   }
   
   return (
