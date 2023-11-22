@@ -5,7 +5,7 @@ function GradesList({ grades }) {
   return (
     <div className='GradeList'>
       {
-        grades.map((gradeInfo) => <AssignmentItem gradeInfo={gradeInfo} />)
+        grades.map((gradeInfo) => <AssignmentItem key={`${gradeInfo.name}-${gradeInfo.assignment}`} gradeInfo={gradeInfo} />)
       }
     </div>
   )
